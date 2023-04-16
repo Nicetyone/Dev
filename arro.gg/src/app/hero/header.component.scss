@@ -1,0 +1,78 @@
+img {
+    filter: drop-shadow(0 0 0.25rem #000)
+    drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+    drop-shadow(0.1rem 0.1rem 0rem #efc022);
+}
+
+div {
+    background-color: red;
+
+    img {
+        background-color: blue;
+    }
+}
+
+#imagesParent {
+    img {
+        transition: all 0.5s ease-in-out;
+        filter: 
+            drop-shadow(0 0 0.5rem #3743eb52)
+            drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+            drop-shadow(0.2rem 0.2rem 0rem #efc022);
+        border-radius: 0 0 80% 80%;
+        background: none;
+        animation: scale 3s ease-in-out infinite alternate;
+
+        @keyframes scale {
+            0% {
+                filter: 
+                drop-shadow(0 0 0.5rem #3743eb52)
+                drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+                drop-shadow(0.2rem 0.2rem 0rem #efc022);
+            }
+            100% {
+                filter: 
+                drop-shadow(0 0 0.5rem #efbf22b4)
+                drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+                drop-shadow(0.2rem 0.2rem 0rem #efc022);
+            }
+        }
+    }
+
+
+    img:hover {
+        filter: 
+            drop-shadow(0 0 0.5rem #3743eb52)
+            drop-shadow(-0.1rem -0.1rem 0rem #ef2222)
+            drop-shadow(0.2rem 0.2rem 0rem #ef2222);
+        scale: 1.2;
+        transform: scale(1.2);
+    }
+
+    
+}
+
+#mainImg {
+    filter: 
+        drop-shadow(0 0 0.5rem #3743eb52)
+        drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+        drop-shadow(0.2rem 0.2rem 0rem #efc022);
+    border-radius: 0 0 80% 80%;
+    background: none;
+    animation: move 1s ease-in-out infinite alternate;
+    transition: all 0.5s ease-in-out;
+
+    @keyframes move {
+        0% {
+            transform: translateY(0.5rem);
+        }
+        100% {
+            transform: translateY(-0.5rem);
+        }
+    }
+}
+
+#mainImg:hover {
+    scale: 1.2;
+    transform: scale(1.2);
+}
