@@ -1,0 +1,65 @@
+#invisibleManager {
+    display: none;
+}
+
+#playerDisplay {
+    filter: 
+        drop-shadow(0 0 0.5rem #3743eb52)
+        drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+        drop-shadow(0.2rem 0.2rem 0rem #efc022);
+    transform: translateY(-200%);
+    animation: slideTop 0.4s ease-in-out forwards;
+    transition: all 2s;
+}
+
+#bodyText {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+}
+
+#image {
+    display: block;
+    max-height: 100%;
+    margin-bottom: 2rem;
+    min-width: 5rem;
+    min-height: 5rem;
+    width: auto;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    filter: 
+        drop-shadow(0 0 0.25rem #3743eb52)
+        drop-shadow(-0.05rem -0.05rem 0rem #efc022)
+        drop-shadow(0.1rem 0.1rem 0rem #efc022)
+    ;
+    scale: 2.5;
+    //no scrollbar y
+    overflow-y: hidden;
+    border-radius: 0 0 80% 80%;
+    background: none;
+    transform: translateX(-20%);
+
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundColor {
+    0% {
+        filter: 
+        drop-shadow(0 0 0.5rem #3743eb52)
+        drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+        drop-shadow(0.2rem 0.2rem 0rem #efc022);
+    }
+    100% {
+        filter: 
+        drop-shadow(0 0 0.5rem #efbf22b4)
+        drop-shadow(-0.1rem -0.1rem 0rem #efc022)
+        drop-shadow(0.2rem 0.2rem 0rem #efc022);
+    }
+}

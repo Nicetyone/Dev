@@ -4,7 +4,7 @@ img {
     drop-shadow(0.1rem 0.1rem 0rem #efc022);
 }
 
-#imagesParent {
+#personCategory {
     img {
         transition: all 0.5s ease-in-out;
         filter: 
@@ -44,6 +44,15 @@ img {
     
 }
 
+#classesText {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: #efc022;
+    text-shadow: 0 0 0.3rem #000000;
+}
+
+
 #mainImg {
     filter: 
         drop-shadow(0 0 0.5rem #3743eb52)
@@ -67,4 +76,20 @@ img {
 #mainImg:hover {
     scale: 1.2;
     transform: scale(1.2);
+}
+@font-face {
+    font-family: "Blank River";
+    src: url("../../assets/fonts/Blank\ River.ttf");
+}
+
+#team {
+    font-family: "Blank River";
+    letter-spacing: 5px;
+
+    h2 {
+        font-size: 5.5rem;
+        text-shadow: 0 0 0.3rem #000000;
+        filter: drop-shadow(0 0 0.5rem #efc022) drop-shadow(-0.1rem -0.1rem 0rem #000000) drop-shadow(0.2rem 0.2rem 0rem #000000);
+        letter-spacing: 10px;
+    }
 }
