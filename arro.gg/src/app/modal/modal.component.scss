@@ -2,14 +2,16 @@
     display: none;
 }
 
+
 #playerDisplay {
     filter: 
         drop-shadow(0 0 0.5rem #3743eb52)
         drop-shadow(-0.1rem -0.1rem 0rem #efc022)
-        drop-shadow(0.2rem 0.2rem 0rem #efc022);
+        drop-shadow(0.2rem 0.1rem 0rem #efc022);
     transform: translateY(-200%);
     animation: slideTop 0.4s ease-in-out forwards;
     transition: all 2s;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 #bodyText {
